@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Quizion</title>
+  </head>
+  <body style="background-color: #f7f9fa">
+    <nav style="background-color: white">
+      <ul>
+        <li class="button1"><a href="../index.php">Home</a></li>
+      </ul>
+      <ul>
+        <li class="button1"><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="login-container">
+      <!-- Form -->
+      <form action="../controller/login.php" method="post">
+        <div class="login-username">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="login-pass">
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" />
+        </div>
+        <input type="submit" name="login" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>

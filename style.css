@@ -1,0 +1,230 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: PT Root UI, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    Segoe UI Symbol;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.1px;
+  color: #212529;
+  height: 100%;
+}
+.container {
+  margin: 0px auto;
+  margin-top: 50px;
+  width: 90%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #071f60;
+}
+.button1 {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: #071f60;
+  border-bottom: 2px solid rgba(0, 151, 252, 0);
+}
+.button1:hover {
+  border-bottom: 2px solid rgba(0, 202, 252, 0.445);
+  cursor: pointer;
+}
+.button2 {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #21233a;
+  background-color: white;
+}
+.button2:hover {
+  background-color: rgb(236, 250, 253);
+  cursor: pointer;
+}
+/* Align right button container */
+.end-container {
+  text-align: end;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: lightblue; */
+  padding: 10px 30px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+/* Header */
+header {
+  background-color: white;
+  border-radius: 30px;
+}
+.header-content h1 {
+  font-weight: 600;
+}
+.header-content {
+  display: flex;
+  height: 450px;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-content > :first-child {
+  flex: 1;
+}
+.header-content > :nth-child(2) {
+  flex: 1.5;
+}
+/* Header left */
+#header-left h1 {
+  margin: 0 0 10px 10px;
+}
+#header-left input[type="search"] {
+  margin-left: 15px;
+  width: 50%;
+  font-size: large;
+  padding: 5px;
+  display: block;
+}
+/* Header right */
+#header-right {
+  line-height: 1.5;
+}
+/* Dashboard */
+#profile-overview {
+  margin-bottom: 15px;
+  height: 150px;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#profile-overview p {
+  font-weight: 600;
+  color: #21233a;
+}
+/* table overview */
+.table-overview {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.table-overview :first-child {
+  text-align: end;
+}
+.table-overview .bottom {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.table-overview .bottom h4 {
+  font-size: larger;
+  color: #21233abe;
+}
+/* Form*/
+.judul {
+  font-size: 1.7em;
+  margin: 5px 10px;
+}
+.question-container .title {
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  width: 30%;
+  transition: width 0.4s ease-in-out;
+  margin-bottom: 5px;
+}
+.question-container .title:focus {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.title {
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  width: 30%;
+  transition: width 0.4s ease-in-out;
+  margin-bottom: 5px;
+}
+.title:focus {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.question {
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.pilihan input[type="text"] {
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  width: 30%;
+  transition: width 0.4s ease-in-out;
+}
+.pilihan input[type="text"]:focus {
+  width: 80%;
+}
+/* Login */
+.login-container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container form {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column;
+  height: 50%;
+  flex-basis: 30%;
+}
+.login-container form div {
+  display: flex;
+}
+.login-container form div * {
+  flex-grow: 1;
+}
+/* Kode Proses.php */
+.kode-judul {
+  margin: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.kode-pilihan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.kode-pilihan label {
+  font-size: 1.1em;
+  width: 100%;
+  padding: 10px;
+}
+/* Participant */
+.participant {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+.participant > a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
